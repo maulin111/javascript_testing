@@ -8,9 +8,9 @@
        //cannot contains a space or hypen
        //Are case-sensitive
 
-    // declare constant value using const keyword
+      // declare constant value using const keyword
        const interestRate = 0.3
-    //    interestRate = 1
+      //    interestRate = 1
        console.log(interestRate)
 
        let name = 'Maulin Desai';
@@ -70,4 +70,32 @@
        let type = points > 100 ? 'Gold' : 'silver';
        console.log(type)
        
+
+       let a = 'red';
+       let b = 'blue';
+
+    // using third variable
+    //    let temp;
+    //    temp = a;
+    //    a = b;
+    //    b = temp;
+
+    // //using destructructing assignment 
+    //     [a,b] = [b,a];
+
+       console.log(a);
+       console.log(b);
+
+       let address = {
+         street: 'a',
+         city: 'b',
+         zipcode: 'c'
+       };
+
+       function showAddress(address){
+         for (let key in address)
+         console.log(key, address[key])
+       }
+
+       showAddress(address);
 
