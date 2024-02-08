@@ -99,3 +99,27 @@
 
        showAddress(address);
 
+       let address1 = createAddress('a','b','c');
+
+       console.log(address1);
+
+       //Factory function
+       function createAddress(street, city, zipcode){
+         return{
+            street,
+            city,
+            zipcode
+         };
+       }
+
+       //Constructor function
+       let address2 = new CreateAddress('a','b','c');
+
+       console.log(address2);
+       
+       function CreateAddress(street, city, zipcode){
+         this.street = street,
+         this.city = city,
+         this.zipcod = zipcode
+       }
+
